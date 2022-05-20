@@ -15,26 +15,26 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_0356562F08A949E895D3A579F64F0F4F"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_14CB948D2C9E445AA4DAA49F97B46511"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_6646D1CA7836E67D7C3720C3D5C3686D"
-        "OwnerKey" = "8:_7F6FB9CCC10A46B2A212A810EB5520ED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_7F6FB9CCC10A46B2A212A810EB5520ED"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_89136288E6024769A8B912BF811977C8"
-        "OwnerKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_14CB948D2C9E445AA4DAA49F97B46511"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_B1FB9253F447A59CED87C353B0F31B0D"
-        "OwnerKey" = "8:_7F6FB9CCC10A46B2A212A810EB5520ED"
+        "OwnerKey" = "8:_14CB948D2C9E445AA4DAA49F97B46511"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -46,7 +46,7 @@
         "Entry"
         {
         "MsmKey" = "8:_B8F3657D7549341F93DEDD5039C837EA"
-        "OwnerKey" = "8:_7F6FB9CCC10A46B2A212A810EB5520ED"
+        "OwnerKey" = "8:_14CB948D2C9E445AA4DAA49F97B46511"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -58,7 +58,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_7F6FB9CCC10A46B2A212A810EB5520ED"
+        "OwnerKey" = "8:_14CB948D2C9E445AA4DAA49F97B46511"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -91,6 +91,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -107,6 +123,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -136,6 +168,26 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0356562F08A949E895D3A579F64F0F4F"
+            {
+            "SourcePath" = "8:..\\PlanTables\\list.ico"
+            "TargetName" = "8:list.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_1A07407125FD42C7B5DE245229ED9C9F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_6646D1CA7836E67D7C3720C3D5C3686D"
             {
             "AssemblyRegister" = "3:1"
@@ -165,26 +217,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_89136288E6024769A8B912BF811977C8"
-            {
-            "SourcePath" = "8:..\\PlanTables\\list.ico"
-            "TargetName" = "8:list.ico"
-            "Tag" = "8:"
-            "Folder" = "8:_1A07407125FD42C7B5DE245229ED9C9F"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_B1FB9253F447A59CED87C353B0F31B0D"
@@ -257,7 +289,7 @@
         {
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_1A07407125FD42C7B5DE245229ED9C9F"
             {
-            "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
+            "DefaultLocation" = "8:C:\\[ProductName]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -306,7 +338,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:PlanTablesSetUp"
         "ProductCode" = "8:{54C6FD09-7964-4EC7-A95A-F5C6F3A7D95A}"
-        "PackageCode" = "8:{2821A4C1-F559-4613-876E-339C7C6B97BD}"
+        "PackageCode" = "8:{9D7FEBA5-4D7D-4A31-B1C5-BB33FABBDE90}"
         "UpgradeCode" = "8:{A1150CE4-7A76-4310-B7C6-3793DBC067B8}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -426,7 +458,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_29DBD510EFD14BEAA5F859EE677369B2"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_CA8EB82510AD45F5867A05F8377DF92F"
             {
             "Name" = "8:任务表"
             "Arguments" = "8:"
@@ -434,10 +466,10 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_7F6FB9CCC10A46B2A212A810EB5520ED"
+            "Target" = "8:_14CB948D2C9E445AA4DAA49F97B46511"
             "Folder" = "8:_AD1ABE431DF04C9787A9BE3FE627714A"
             "WorkingFolder" = "8:_1A07407125FD42C7B5DE245229ED9C9F"
-            "Icon" = "8:_89136288E6024769A8B912BF811977C8"
+            "Icon" = "8:_0356562F08A949E895D3A579F64F0F4F"
             "Feature" = "8:"
             }
         }
@@ -839,7 +871,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_7F6FB9CCC10A46B2A212A810EB5520ED"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_14CB948D2C9E445AA4DAA49F97B46511"
             {
             "SourcePath" = "8:..\\PlanTables\\obj\\Debug\\PlanTables.exe"
             "TargetName" = "8:"

@@ -34,6 +34,7 @@ namespace PlanTables
             this.textBox_addEmployee = new Sunny.UI.UITextBox();
             this.buttonAddThing = new Sunny.UI.UIButton();
             this.button_addEmployee = new Sunny.UI.UIButton();
+            this.uiButton_notice = new Sunny.UI.UIButton();
             this.SuspendLayout();
             // 
             // comboBoxTableName
@@ -118,11 +119,38 @@ namespace PlanTables
             this.button_addEmployee.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             this.button_addEmployee.Click += new System.EventHandler(this.button_addEmployee_Click);
             // 
+            // uiButton_notice
+            // 
+            this.uiButton_notice.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton_notice.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.uiButton_notice.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.uiButton_notice.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
+            this.uiButton_notice.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.uiButton_notice.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.uiButton_notice.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiButton_notice.Location = new System.Drawing.Point(258, 47);
+            this.uiButton_notice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.uiButton_notice.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton_notice.Name = "uiButton_notice";
+            this.uiButton_notice.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.uiButton_notice.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
+            this.uiButton_notice.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.uiButton_notice.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.uiButton_notice.Size = new System.Drawing.Size(237, 30);
+            this.uiButton_notice.Style = Sunny.UI.UIStyle.Green;
+            this.uiButton_notice.TabIndex = 5;
+            this.uiButton_notice.TabStop = false;
+            this.uiButton_notice.Text = "暂无添加您为下属的消息";
+            this.uiButton_notice.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton_notice.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.uiButton_notice.Click += new System.EventHandler(this.uiButton_notice_Click);
+            // 
             // FormAddThing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(507, 83);
+            this.Controls.Add(this.uiButton_notice);
             this.Controls.Add(this.button_addEmployee);
             this.Controls.Add(this.buttonAddThing);
             this.Controls.Add(this.textBox_addEmployee);
@@ -131,6 +159,7 @@ namespace PlanTables
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormAddThing";
             this.Text = "增加任务";
+            this.Load += new System.EventHandler(this.FormAddThing_Load);
             this.ResumeLayout(false);
 
         }
@@ -142,5 +171,6 @@ namespace PlanTables
         private Sunny.UI.UITextBox textBox_addEmployee;
         private Sunny.UI.UIButton buttonAddThing;
         private Sunny.UI.UIButton button_addEmployee;
+        private Sunny.UI.UIButton uiButton_notice;
     }
 }

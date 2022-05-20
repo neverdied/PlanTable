@@ -15,7 +15,19 @@ namespace PlanTables
 {
     public partial class FormAddThing : Form
     {
-        
+        private void FormAddThing_Load(object sender, EventArgs e)
+        {
+            strSql = "select * from [PLAN].[dbo].[" + tableName + "Employer] where SIGN=0";
+            dtTmp = sqlTemp.ExecuteQuery(strSql);
+            if (dtTmp.Rows.Count != 0)
+            {
+                uiButton_notice.SetStyle(UIStyle.Red);
+                uiButton_notice.Text = "有" + dtTmp.Rows.Count + "个添加您为下属的消息";
+
+            }
+            
+        }
+
         public FormAddThing(string tN, ref bool l)
         {
             tableName = tN;
@@ -74,23 +86,24 @@ namespace PlanTables
                     string linkId = "0";
                     if (addName != tableName)
                     {
-                        grade = "2";
+                        grade = "3";
                         strSql = "insert into [PLAN].[dbo].[" + tableName + "] (PLANCONTENT,STARTTIME,OPERATOR,GRADE) values('" + addName + ":" + strContent + "','" + DateTime.Now.ToShortDateString() + "','self',3)  select @@identity AS ID";
                         dtTmp = sqlTemp.ExecuteQuery(strSql);
                         linkId = dtTmp.Rows[0]["ID"].ToString();
-
-                    }
-                    else
-                    {
-                        grade = "1";
-                    }
-                    if (strContent != "")
-                    {
-                        strSql = "insert into [PLAN].[dbo].[" + addName + "] (PLANCONTENT,STARTTIME,OPERATOR,GRADE,LINKID) values('" + strContent + "','" + DateTime.Now.ToShortDateString() + "','" + tableName + "'," + grade + "," + linkId + ")";
+                        grade = "2";
+                        strSql = "insert into [PLAN].[dbo].[" + addName + "] (PLANCONTENT,STARTTIME,OPERATOR,GRADE,LINKID) values('" + tableName + ":" + strContent + "','" + DateTime.Now.ToShortDateString() + "','" + tableName + "'," + grade + "," + linkId + ")";
                         dtTmp = sqlTemp.ExecuteQuery(strSql);
-
                         UIMessageTip.ShowOk("增加任务成功");
                     }
+                    else if (strContent != "")
+                    {
+                        grade = "1";
+                        strSql = "insert into [PLAN].[dbo].[" + addName + "] (PLANCONTENT,STARTTIME,OPERATOR,GRADE,LINKID) values('"+ strContent + "','" + DateTime.Now.ToShortDateString() + "','" + tableName + "'," + grade + "," + linkId + ")";
+                        dtTmp = sqlTemp.ExecuteQuery(strSql);
+                        UIMessageTip.ShowOk("增加任务成功");
+
+                    }
+                    
                 }
                 catch (Exception ex)
                 {
@@ -120,24 +133,22 @@ namespace PlanTables
             }
         }
 
-        private void FormAddThing_Load(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void button_addEmployee_Click(object sender, EventArgs e)
         {
             try
             {
-                strSql = "insert into [PLAN].[dbo].[" + tableName + "Employee] (USERNAME) values('" + textBox_addEmployee.Text + "')  select @@identity";
+                //strSql = "insert into [PLAN].[dbo].[" + tableName + "Employee] (USERNAME) values('" + textBox_addEmployee.Text + "')  select @@identity";
+                strSql = "insert into [PLAN].[dbo].[" + textBox_addEmployee.Text + "Employer] (USERNAME,SIGN) values('" + tableName + "',0)  select @@identity";
                 dtTmp = sqlTemp.ExecuteQuery(strSql);
                 if (dtTmp != null)
                 {
-                    UIMessageTip.ShowOk("增加下属成功");
+                    UIMessageTip.ShowOk("发送增加下属请求成功");
                 }
                 else
                 {
-                    UIMessageTip.ShowWarning("增加下属失败");
+                    UIMessageTip.ShowWarning("发送增加下属请求失败");
                 }
             }
             catch (Exception ex)
@@ -154,7 +165,12 @@ namespace PlanTables
                 button_addEmployee_Click(sender, e);
             }
         }
-    
+
+        private void uiButton_notice_Click(object sender, EventArgs e)
+        {
+            FormNotice form = new FormNotice(tableName);
+            form.ShowDialog();
+        }
     }
 }
 

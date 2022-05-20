@@ -92,7 +92,9 @@ namespace PlanTables
 
                 strSql = "create table " + textBoxRegUser.Text + "( ID int IDENTITY(1,1) NOT NULL,STARTTIME date null,ENDTIME date null,PLANCONTENT  varchar(50) null,OPERATOR  varchar(50) null,GRADE int null,LINKID int null)";
                 sqlTemp.ExecuteQuery(strSql);
-                strSql = "create table " + textBoxRegUser.Text + "Employee( ID int IDENTITY(1,1) NOT NULL,USERNAME varchar(50) null)";
+                strSql = "create table " + textBoxRegUser.Text + "Employee( ID int IDENTITY(1,1) NOT NULL UNIQUE,USERNAME varchar(50) null UNIQUE)";
+                sqlTemp.ExecuteQuery(strSql);
+                strSql = "create table " + textBoxRegUser.Text + "Employer( ID int IDENTITY(1,1) NOT NULL UNIQUE,USERNAME varchar(50) null UNIQUE,SIGN int)";
                 sqlTemp.ExecuteQuery(strSql);
                 //strSql = "insert into [PLAN].[dbo].[" + textBoxRegUser.Text + "] (USERNAME) values('" + textBoxRegUser.Text + "')";
             }

@@ -319,7 +319,7 @@ namespace PlanTables
                         AddThings(listViewNotDoneToday, dtTmp.Rows[i]["ID"].ToString(), dtTmp.Rows[i]["PLANCONTENT"].ToString());
                         if (dtTmp.Rows[i]["GRADE"].ToString() == "2")
                         {
-                            listViewNotDoneToday.Items[i].ForeColor = System.Drawing.Color.Gray;
+                            listViewNotDoneToday.Items[i].ForeColor = System.Drawing.Color.Orange;
                         }
                         if (dtTmp.Rows[i]["GRADE"].ToString() == "3")
                         {
