@@ -19,11 +19,14 @@ namespace PlanTables
         {
             strSql = "select * from [PLAN].[dbo].[" + tableName + "Employer] where SIGN=0";
             dtTmp = sqlTemp.ExecuteQuery(strSql);
-            if (dtTmp.Rows.Count != 0)
+            if (dtTmp != null)
             {
-                uiButton_notice.SetStyle(UIStyle.Red);
-                uiButton_notice.Text = "有" + dtTmp.Rows.Count + "个添加您为下属的消息";
+                if (dtTmp.Rows.Count != 0)
+                {
+                    uiButton_notice.SetStyle(UIStyle.Red);
+                    uiButton_notice.Text = "有" + dtTmp.Rows.Count + "个添加您为下属的消息";
 
+                }
             }
             
         }
