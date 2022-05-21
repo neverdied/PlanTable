@@ -199,19 +199,25 @@ namespace PlanTables
                     string fileName = Path.GetFileName(filePath);
                     if (fileName == DateTime.Now.ToLongDateString().ToString() + "待办.ini")
                     {
-
-                        List<string> l = READFILE(@"C:\待办事项\" + DateTime.Now.AddDays(-1).ToLongDateString().ToString() + "待办.ini");
+                        int dis = 1;
+                        string path = @"C:\待办事项\" + DateTime.Now.AddDays(-dis).ToLongDateString().ToString() + "待办.ini";
+                        while (!File.Exists(path))
+                        {
+                            dis++;
+                            path = @"C:\待办事项\" + DateTime.Now.AddDays(-dis).ToLongDateString().ToString() + "待办.ini";
+                        }
+                        List<string> l = READFILE(path);
                         for (int i = 0; i < l.Count; i++)
                         {
                             string[] strArray = Regex.Split(l[i], "已拖延", RegexOptions.IgnoreCase);
                             if (strArray.Length == 1)
                             {
-                                File.AppendAllText(@"C:\待办事项\" + DateTime.Now.ToLongDateString().ToString() + "待办.ini", l[i] + "已拖延1天\r\n");
+                                File.AppendAllText(@"C:\待办事项\" + DateTime.Now.ToLongDateString().ToString() + "待办.ini", l[i] + "已拖延"+dis+"天\r\n");
                             }
                             else if (strArray.Length == 2)
                             {
                                 char[] chArray = strArray[1].ToCharArray();
-                                int delay = chArray[0] + 1 - '0';
+                                int delay = chArray[0] + dis - '0';
                                 File.AppendAllText(@"C:\待办事项\" + DateTime.Now.ToLongDateString().ToString() + "待办.ini", strArray[0] + "已拖延" + delay + "天\r\n");
 
                             }
