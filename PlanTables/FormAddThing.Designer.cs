@@ -29,7 +29,7 @@ namespace PlanTables
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBoxTableName = new Sunny.UI.UIComboBox();
+            this.comboBoxUIuserName = new Sunny.UI.UIComboBox();
             this.textBoxAddThing = new Sunny.UI.UITextBox();
             this.textBox_addEmployee = new Sunny.UI.UITextBox();
             this.buttonAddThing = new Sunny.UI.UIButton();
@@ -37,23 +37,23 @@ namespace PlanTables
             this.uiButton_notice = new Sunny.UI.UIButton();
             this.SuspendLayout();
             // 
-            // comboBoxTableName
+            // comboBoxUIuserName
             // 
-            this.comboBoxTableName.DataSource = null;
-            this.comboBoxTableName.DropDownStyle = Sunny.UI.UIDropDownStyle.DropDownList;
-            this.comboBoxTableName.FillColor = System.Drawing.Color.White;
-            this.comboBoxTableName.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.comboBoxTableName.Location = new System.Drawing.Point(11, 10);
-            this.comboBoxTableName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.comboBoxTableName.MinimumSize = new System.Drawing.Size(54, 0);
-            this.comboBoxTableName.Name = "comboBoxTableName";
-            this.comboBoxTableName.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.comboBoxTableName.Size = new System.Drawing.Size(129, 29);
-            this.comboBoxTableName.TabIndex = 0;
-            this.comboBoxTableName.TabStop = false;
-            this.comboBoxTableName.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.comboBoxTableName.Watermark = "选择下属";
-            this.comboBoxTableName.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.comboBoxUIuserName.DataSource = null;
+            this.comboBoxUIuserName.DropDownStyle = Sunny.UI.UIDropDownStyle.DropDownList;
+            this.comboBoxUIuserName.FillColor = System.Drawing.Color.White;
+            this.comboBoxUIuserName.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.comboBoxUIuserName.Location = new System.Drawing.Point(11, 10);
+            this.comboBoxUIuserName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.comboBoxUIuserName.MinimumSize = new System.Drawing.Size(54, 0);
+            this.comboBoxUIuserName.Name = "comboBoxUIuserName";
+            this.comboBoxUIuserName.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.comboBoxUIuserName.Size = new System.Drawing.Size(129, 29);
+            this.comboBoxUIuserName.TabIndex = 0;
+            this.comboBoxUIuserName.TabStop = false;
+            this.comboBoxUIuserName.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.comboBoxUIuserName.Watermark = "选择下属";
+            this.comboBoxUIuserName.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // textBoxAddThing
             // 
@@ -85,7 +85,7 @@ namespace PlanTables
             this.textBox_addEmployee.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.textBox_addEmployee.Watermark = "添加下属";
             this.textBox_addEmployee.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            this.textBox_addEmployee.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxAddThing_KeyPress);
+            this.textBox_addEmployee.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_addEmployee_KeyPress);
             // 
             // buttonAddThing
             // 
@@ -155,7 +155,7 @@ namespace PlanTables
             this.Controls.Add(this.buttonAddThing);
             this.Controls.Add(this.textBox_addEmployee);
             this.Controls.Add(this.textBoxAddThing);
-            this.Controls.Add(this.comboBoxTableName);
+            this.Controls.Add(this.comboBoxUIuserName);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormAddThing";
             this.Text = "增加任务";
@@ -166,7 +166,7 @@ namespace PlanTables
 
         #endregion
 
-        private Sunny.UI.UIComboBox comboBoxTableName;
+        private Sunny.UI.UIComboBox comboBoxUIuserName;
         private Sunny.UI.UITextBox textBoxAddThing;
         private Sunny.UI.UITextBox textBox_addEmployee;
         private Sunny.UI.UIButton buttonAddThing;

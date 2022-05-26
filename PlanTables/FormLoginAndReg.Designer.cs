@@ -29,59 +29,59 @@ namespace PlanTables
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new Sunny.UI.UIPanel();
-            this.linkLabel1 = new Sunny.UI.UILinkLabel();
+            this.panelLog = new Sunny.UI.UIPanel();
+            this.linkLabelReg = new Sunny.UI.UILinkLabel();
             this.textBoxLoginPass = new Sunny.UI.UITextBox();
             this.textBoxLoginUser = new Sunny.UI.UITextBox();
             this.buttonLogin = new Sunny.UI.UIButton();
             this.uiLabel2 = new Sunny.UI.UILabel();
             this.uiLabel1 = new Sunny.UI.UILabel();
-            this.panel2 = new Sunny.UI.UIPanel();
+            this.panelReg = new Sunny.UI.UIPanel();
             this.textBoxRegPass = new Sunny.UI.UITextBox();
-            this.linkLabel2 = new Sunny.UI.UILinkLabel();
+            this.linkLabelLog = new Sunny.UI.UILinkLabel();
             this.textBoxRegRepass = new Sunny.UI.UITextBox();
             this.textBoxRegUser = new Sunny.UI.UITextBox();
             this.buttonReg = new Sunny.UI.UIButton();
             this.uiLabel3 = new Sunny.UI.UILabel();
             this.uiLabel4 = new Sunny.UI.UILabel();
             this.uiLabel5 = new Sunny.UI.UILabel();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panelLog.SuspendLayout();
+            this.panelReg.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // panelLog
             // 
-            this.panel1.Controls.Add(this.linkLabel1);
-            this.panel1.Controls.Add(this.textBoxLoginPass);
-            this.panel1.Controls.Add(this.textBoxLoginUser);
-            this.panel1.Controls.Add(this.buttonLogin);
-            this.panel1.Controls.Add(this.uiLabel2);
-            this.panel1.Controls.Add(this.uiLabel1);
-            this.panel1.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.panel1.Location = new System.Drawing.Point(11, 10);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(311, 175);
-            this.panel1.TabIndex = 0;
-            this.panel1.Text = null;
-            this.panel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.panel1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.panelLog.Controls.Add(this.linkLabelReg);
+            this.panelLog.Controls.Add(this.textBoxLoginPass);
+            this.panelLog.Controls.Add(this.textBoxLoginUser);
+            this.panelLog.Controls.Add(this.buttonLogin);
+            this.panelLog.Controls.Add(this.uiLabel2);
+            this.panelLog.Controls.Add(this.uiLabel1);
+            this.panelLog.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.panelLog.Location = new System.Drawing.Point(11, 10);
+            this.panelLog.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelLog.MinimumSize = new System.Drawing.Size(1, 1);
+            this.panelLog.Name = "panelLog";
+            this.panelLog.Size = new System.Drawing.Size(311, 175);
+            this.panelLog.TabIndex = 0;
+            this.panelLog.Text = null;
+            this.panelLog.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panelLog.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
-            // linkLabel1
+            // linkLabelReg
             // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.linkLabel1.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
-            this.linkLabel1.Location = new System.Drawing.Point(26, 125);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(100, 23);
-            this.linkLabel1.TabIndex = 5;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "注册";
-            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.linkLabel1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.linkLabelReg.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
+            this.linkLabelReg.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.linkLabelReg.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
+            this.linkLabelReg.Location = new System.Drawing.Point(26, 125);
+            this.linkLabelReg.Name = "linkLabelReg";
+            this.linkLabelReg.Size = new System.Drawing.Size(100, 23);
+            this.linkLabelReg.TabIndex = 5;
+            this.linkLabelReg.TabStop = true;
+            this.linkLabelReg.Text = "注册";
+            this.linkLabelReg.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.linkLabelReg.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.linkLabelReg.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelReg_LinkClicked);
             // 
             // textBoxLoginPass
             // 
@@ -153,27 +153,27 @@ namespace PlanTables
             this.uiLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiLabel1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
-            // panel2
+            // panelReg
             // 
-            this.panel2.Controls.Add(this.textBoxRegPass);
-            this.panel2.Controls.Add(this.linkLabel2);
-            this.panel2.Controls.Add(this.textBoxRegRepass);
-            this.panel2.Controls.Add(this.textBoxRegUser);
-            this.panel2.Controls.Add(this.buttonReg);
-            this.panel2.Controls.Add(this.uiLabel3);
-            this.panel2.Controls.Add(this.uiLabel4);
-            this.panel2.Controls.Add(this.uiLabel5);
-            this.panel2.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.panel2.Location = new System.Drawing.Point(11, 10);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel2.MinimumSize = new System.Drawing.Size(1, 1);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(311, 173);
-            this.panel2.TabIndex = 1;
-            this.panel2.Text = null;
-            this.panel2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.panel2.Visible = false;
-            this.panel2.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.panelReg.Controls.Add(this.textBoxRegPass);
+            this.panelReg.Controls.Add(this.linkLabelLog);
+            this.panelReg.Controls.Add(this.textBoxRegRepass);
+            this.panelReg.Controls.Add(this.textBoxRegUser);
+            this.panelReg.Controls.Add(this.buttonReg);
+            this.panelReg.Controls.Add(this.uiLabel3);
+            this.panelReg.Controls.Add(this.uiLabel4);
+            this.panelReg.Controls.Add(this.uiLabel5);
+            this.panelReg.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.panelReg.Location = new System.Drawing.Point(11, 10);
+            this.panelReg.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelReg.MinimumSize = new System.Drawing.Size(1, 1);
+            this.panelReg.Name = "panelReg";
+            this.panelReg.Size = new System.Drawing.Size(311, 173);
+            this.panelReg.TabIndex = 1;
+            this.panelReg.Text = null;
+            this.panelReg.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panelReg.Visible = false;
+            this.panelReg.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // textBoxRegPass
             // 
@@ -192,20 +192,20 @@ namespace PlanTables
             this.textBoxRegPass.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             this.textBoxRegPass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxRegPass_KeyPress);
             // 
-            // linkLabel2
+            // linkLabelLog
             // 
-            this.linkLabel2.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
-            this.linkLabel2.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.linkLabel2.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
-            this.linkLabel2.Location = new System.Drawing.Point(37, 137);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(100, 23);
-            this.linkLabel2.TabIndex = 9;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "登录";
-            this.linkLabel2.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.linkLabel2.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            this.linkLabelLog.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
+            this.linkLabelLog.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.linkLabelLog.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
+            this.linkLabelLog.Location = new System.Drawing.Point(37, 137);
+            this.linkLabelLog.Name = "linkLabelLog";
+            this.linkLabelLog.Size = new System.Drawing.Size(100, 23);
+            this.linkLabelLog.TabIndex = 9;
+            this.linkLabelLog.TabStop = true;
+            this.linkLabelLog.Text = "登录";
+            this.linkLabelLog.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.linkLabelLog.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.linkLabelLog.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelLog_LinkClicked);
             // 
             // textBoxRegRepass
             // 
@@ -293,29 +293,29 @@ namespace PlanTables
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(335, 198);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panelReg);
+            this.Controls.Add(this.panelLog);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormLoginAndReg";
             this.Text = "登陆注册";
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
+            this.panelLog.ResumeLayout(false);
+            this.panelReg.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Sunny.UI.UIPanel panel1;
-        private Sunny.UI.UILinkLabel linkLabel1;
+        private Sunny.UI.UIPanel panelLog;
+        private Sunny.UI.UILinkLabel linkLabelReg;
         private Sunny.UI.UITextBox textBoxLoginPass;
         private Sunny.UI.UITextBox textBoxLoginUser;
         private Sunny.UI.UIButton buttonLogin;
         private Sunny.UI.UILabel uiLabel2;
         private Sunny.UI.UILabel uiLabel1;
-        private Sunny.UI.UIPanel panel2;
+        private Sunny.UI.UIPanel panelReg;
         private Sunny.UI.UITextBox textBoxRegPass;
-        private Sunny.UI.UILinkLabel linkLabel2;
+        private Sunny.UI.UILinkLabel linkLabelLog;
         private Sunny.UI.UITextBox textBoxRegRepass;
         private Sunny.UI.UITextBox textBoxRegUser;
         private Sunny.UI.UIButton buttonReg;
