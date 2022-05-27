@@ -105,6 +105,7 @@ namespace PlanTables
             this.contentDoneToday,
             this.idDoneToday});
             this.listViewDoneToday.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Strikeout);
+            this.listViewDoneToday.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
             this.listViewDoneToday.HideSelection = false;
             this.listViewDoneToday.Location = new System.Drawing.Point(274, 26);
             this.listViewDoneToday.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -134,6 +135,7 @@ namespace PlanTables
             this.idNotDoneToday});
             this.listViewNotDoneToday.Font = new System.Drawing.Font("宋体", 13F, System.Drawing.FontStyle.Bold);
             this.listViewNotDoneToday.ForeColor = System.Drawing.Color.Red;
+            this.listViewNotDoneToday.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
             this.listViewNotDoneToday.HideSelection = false;
             this.listViewNotDoneToday.Location = new System.Drawing.Point(10, 26);
             this.listViewNotDoneToday.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -195,7 +197,7 @@ namespace PlanTables
             this.Avatar.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             this.Avatar.Click += new System.EventHandler(this.user_Click);
             // 
-            // Form1
+            // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -211,7 +213,7 @@ namespace PlanTables
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "FormMain";
             this.ShowInTaskbar = false;
             this.Text = "任务表";
             this.Load += new System.EventHandler(this.Form1_Load);

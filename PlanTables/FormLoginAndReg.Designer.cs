@@ -71,6 +71,7 @@ namespace PlanTables
             // linkLabelReg
             // 
             this.linkLabelReg.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
+            this.linkLabelReg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.linkLabelReg.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.linkLabelReg.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
             this.linkLabelReg.Location = new System.Drawing.Point(26, 125);
@@ -133,6 +134,7 @@ namespace PlanTables
             // 
             // uiLabel2
             // 
+            this.uiLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.uiLabel2.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.uiLabel2.Location = new System.Drawing.Point(1, 68);
             this.uiLabel2.Name = "uiLabel2";
@@ -144,6 +146,7 @@ namespace PlanTables
             // 
             // uiLabel1
             // 
+            this.uiLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.uiLabel1.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.uiLabel1.Location = new System.Drawing.Point(3, 10);
             this.uiLabel1.Name = "uiLabel1";
@@ -195,6 +198,7 @@ namespace PlanTables
             // linkLabelLog
             // 
             this.linkLabelLog.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(40)))));
+            this.linkLabelLog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.linkLabelLog.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.linkLabelLog.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
             this.linkLabelLog.Location = new System.Drawing.Point(37, 137);
@@ -257,6 +261,7 @@ namespace PlanTables
             // 
             // uiLabel3
             // 
+            this.uiLabel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.uiLabel3.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.uiLabel3.Location = new System.Drawing.Point(3, 94);
             this.uiLabel3.Name = "uiLabel3";
@@ -268,6 +273,7 @@ namespace PlanTables
             // 
             // uiLabel4
             // 
+            this.uiLabel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.uiLabel4.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.uiLabel4.Location = new System.Drawing.Point(3, 16);
             this.uiLabel4.Name = "uiLabel4";
@@ -279,6 +285,7 @@ namespace PlanTables
             // 
             // uiLabel5
             // 
+            this.uiLabel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.uiLabel5.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.uiLabel5.Location = new System.Drawing.Point(3, 54);
             this.uiLabel5.Name = "uiLabel5";
@@ -293,8 +300,8 @@ namespace PlanTables
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(335, 198);
-            this.Controls.Add(this.panelReg);
             this.Controls.Add(this.panelLog);
+            this.Controls.Add(this.panelReg);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormLoginAndReg";
             this.Text = "登陆注册";
