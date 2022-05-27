@@ -20,7 +20,7 @@ namespace mySQLtest
         static string configPwd = ConfigurationManager.AppSettings["pwd"];
         static string configDatabase = ConfigurationManager.AppSettings["database"];
         static string configConnectionTimeout = ConfigurationManager.AppSettings["ConnectionTimeout"];
-        public static string MySqlCon = "server = "+ configServer + ";uid = "+ configUid + "; pwd = "+configPwd+";database = "+configDatabase+";Connection Timeout="+configConnectionTimeout;             //在下面我会介绍这部分怎么填写;
+        public static string MySqlCon = "server = " + configServer + ";uid = " + configUid + "; pwd = " + configPwd + ";database = " + configDatabase + ";Connection Timeout=" + configConnectionTimeout;             //在下面我会介绍这部分怎么填写;
         public DataTable ExecuteQuery(string sqlStr)      //用于查询；其实是相当于提供一个可以传参的函数，到时候写一个sql语句，存在string里，传给这个函数，就会自动执行。
         {
             try

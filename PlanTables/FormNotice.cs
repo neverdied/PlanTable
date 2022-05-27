@@ -29,7 +29,7 @@ namespace PlanTables
         sqlhelp sqlTemp = new sqlhelp();
         //定义存sql结果的数据集
         DataTable dtTmp;
-        
+
         /**
          * 加载窗口时调用此方法
          * **/
@@ -100,7 +100,7 @@ namespace PlanTables
                 this.myButtonNo.Visible = true;
             }
         }
-        
+
 
         //构造函数，增加任务窗口将用户传过来
         public FormNotice(String UIuserName)
@@ -109,7 +109,7 @@ namespace PlanTables
             InitializeComponent();
             //将传过来的用户名赋给本地变量
             table_name = UIuserName;
-            
+
         }
 
         /**
@@ -137,7 +137,7 @@ namespace PlanTables
         private void myButtonOK_Click(object sender, EventArgs e)
         {
             //如果被选择的项不为空且有未同意的请求
-                        if (listViewNotice.SelectedIndices != null && listViewNotice.SelectedIndices.Count > 0)
+            if (listViewNotice.SelectedIndices != null && listViewNotice.SelectedIndices.Count > 0)
             {
                 //存储被选择的项
                 int s = listViewNotice.SelectedIndices[0];
@@ -153,7 +153,7 @@ namespace PlanTables
                 if (dtTmp != null)
                 {
                     //提示请求成功
-                    UIMessageTip.ShowOk("接受"+ listViewNotice.Items[s].Text+"的请求成功！");
+                    UIMessageTip.ShowOk("接受" + listViewNotice.Items[s].Text + "的请求成功！");
                 }
                 //如果没网
                 else
@@ -165,7 +165,7 @@ namespace PlanTables
                 listViewNotice.Items[s].Remove();
                 //展示提示
                 showNotice();
-                
+
 
             }
         }
@@ -202,9 +202,9 @@ namespace PlanTables
                 listViewNotice.Items[s].Remove();
                 //展示提示
                 showNotice();
-                
+
             }
         }
-         
+
     }
 }

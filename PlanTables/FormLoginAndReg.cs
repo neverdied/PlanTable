@@ -31,7 +31,7 @@ namespace PlanTables
         DataTable dtTmp;
         //定义一个用户名为本地模式
         public String UIuserNames = "本地模式";
-        
+
         /**
          * 点击登录标签执行显示登录框
          * **/
@@ -62,21 +62,21 @@ namespace PlanTables
             //执行这个sql语句
             dtTmp = sqlTemp.ExecuteQuery(strSql);
             //如果有网
-                if (dtTmp != null)
+            if (dtTmp != null)
+            {
+                //如果没有这个账号密码
+                if (dtTmp.Rows.Count != 1)
                 {
-                    //如果没有这个账号密码
-                    if (dtTmp.Rows.Count != 1)
-                    {
-                        //提示账号密码不存在
-                        UIMessageTip.ShowWarning("账号密码不存在");
-                    }
-                    //如果有这个账号密码
-                    else
-                    {
+                    //提示账号密码不存在
+                    UIMessageTip.ShowWarning("账号密码不存在");
+                }
+                //如果有这个账号密码
+                else
+                {
                     //提示登陆成功
-                        UIMessageTip.ShowOk("登陆成功");
+                    UIMessageTip.ShowOk("登陆成功");
                     //UI上的用户名改为登录名
-                        UIuserNames = textBoxLoginUser.Text;
+                    UIuserNames = textBoxLoginUser.Text;
                     //将账号密码写入配置文件
                     Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
                     //配置文件中的用户名改为本用户
@@ -88,17 +88,17 @@ namespace PlanTables
                     //刷新配置文件
                     ConfigurationManager.RefreshSection("appSettings");
                     //关闭登陆注册窗口
-                        this.Close();
-                    }
+                    this.Close();
                 }
-                //如果没网
-                else
-                {
-                    //提示没有网络
-                    UIMessageTip.ShowWarning("没有网洛");
-                }
-            
-            
+            }
+            //如果没网
+            else
+            {
+                //提示没有网络
+                UIMessageTip.ShowWarning("没有网洛");
+            }
+
+
         }
 
         /**
@@ -116,9 +116,9 @@ namespace PlanTables
                 if (dtTmp != null)
                 {
                     //提示注册成功
-                        UIMessageTip.ShowOk("注册成功");
+                    UIMessageTip.ShowOk("注册成功");
                     //点击登陆标签
-                        linkLabelLog_LinkClicked(null, null);
+                    linkLabelLog_LinkClicked(null, null);
                     //定义一个创建用户表的sql字符串
                     strSql = "create table " + textBoxRegUser.Text + "( ID int IDENTITY(1,1) NOT NULL,STARTTIME date null,ENDTIME date null,PLANCONTENT  varchar(50) null,OPERATOR  varchar(50) null,GRADE int null,LINKID int null)";
                     //执行这个sql语句
@@ -139,8 +139,8 @@ namespace PlanTables
                     //提示注册失败
                     UIMessageTip.ShowWarning("注册失败");
                 }
-            
-                 
+
+
             }
             //如果密码不一致
             else

@@ -188,39 +188,39 @@ namespace PlanTables
                 //将本地设置为假（网络模式）
                 local = false;
 
-                
-                    //获取pass.ini第一行为用户名
-                    string userName = ConfigurationManager.AppSettings["userName"];
-                    //获取pass.ini第二行为密码
-                    string password = ConfigurationManager.AppSettings["passWord"];
-                    //用字符串保存sql语句--验证账号密码是否正确
-                    strSql = "select * from [PLAN].[dbo].[LOGIN] where (USERNAME='" + userName + "' and PASSWORD='" + password + "')";
-                    //执行sql语句
-                    dtTmp = sqlTemp.ExecuteQuery(strSql);
-                    //如果执行结果不为空，及有网络
-                    if (dtTmp != null)
-                    {
-                        //如果执行sql语句的结果行数不为1
-                        if (dtTmp.Rows.Count == 1)
-                        {
-                            //UI上的用户名为登陆时输入的用户名
-                            UIuserName = userName;
-                            //将UI上的用户名渲染再头像上
-                            Avatar.Text = UIuserName;
-                            //将UI选择模式改为网络模式
-                            SwitchMode.Active = true;
-                            //刷新数据
-                            ShowData();
-                        }
-                    }
-                    //如果执行结果为空（没有网络）
-                    else
-                    {
-                        //提示没有网络
-                        UIMessageTip.ShowWarning("没有网络");
-                    }
 
-                
+                //获取pass.ini第一行为用户名
+                string userName = ConfigurationManager.AppSettings["userName"];
+                //获取pass.ini第二行为密码
+                string password = ConfigurationManager.AppSettings["passWord"];
+                //用字符串保存sql语句--验证账号密码是否正确
+                strSql = "select * from [PLAN].[dbo].[LOGIN] where (USERNAME='" + userName + "' and PASSWORD='" + password + "')";
+                //执行sql语句
+                dtTmp = sqlTemp.ExecuteQuery(strSql);
+                //如果执行结果不为空，及有网络
+                if (dtTmp != null)
+                {
+                    //如果执行sql语句的结果行数不为1
+                    if (dtTmp.Rows.Count == 1)
+                    {
+                        //UI上的用户名为登陆时输入的用户名
+                        UIuserName = userName;
+                        //将UI上的用户名渲染再头像上
+                        Avatar.Text = UIuserName;
+                        //将UI选择模式改为网络模式
+                        SwitchMode.Active = true;
+                        //刷新数据
+                        ShowData();
+                    }
+                }
+                //如果执行结果为空（没有网络）
+                else
+                {
+                    //提示没有网络
+                    UIMessageTip.ShowWarning("没有网络");
+                }
+
+
             }
             //如果本地模式为假（网络模式）
             else if (local == false)
