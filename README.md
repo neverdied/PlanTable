@@ -58,4 +58,4 @@
 >>![展示效果](http://39.99.172.143/img/%E6%98%BE%E7%A4%BA%E7%BB%99%E4%B8%8B%E5%B1%9E%E4%BB%BB%E5%8A%A1%E7%9A%84%E6%95%88%E6%9E%9C.png)
 >>![下属点击完成](http://39.99.172.143/img/%E4%B8%8B%E5%B1%9E%E7%82%B9%E5%87%BB%E5%AE%8C%E6%88%90.png)
 >>![上级自动完成](http://39.99.172.143/img/%E4%B8%8B%E5%B1%9E%E5%AE%8C%E6%88%90%E6%95%88%E6%9E%9C.png)
-# [软件下载连接](http://39.99.172.143/exe/PlanTablesSetUp.msi)
+# <a href="http://39.99.172.143/exe/PlanTablesSetUp.msi" target="_blank">软件下载链接</a>
